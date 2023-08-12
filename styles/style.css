@@ -4,11 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
-  padding: 92px 49px 92px 51px;
-}
-
-.content_section {
-  width: 1440px;
+  padding: 96px 49px 92px 51px;
 }
 
 .header_menu {
@@ -55,6 +51,7 @@
 .address {
   display: flex;
   flex-direction: column;
+  align-items: start;
   color: #000;
   font-size: 18px;
   line-height: 24.3px;
@@ -63,6 +60,7 @@
 .header__address {
   align-self: center;
   justify-self: end;
+  padding-left: 139px;
 }
 
 .header__link_active:last-child {
@@ -71,7 +69,6 @@
 /* ---------------------------------------------------------------------------------------------------- */
 .cover {
   margin: auto;
-  max-width: 1440px;
   background-image: url(/images/cover.jpg);
   background-repeat: no-repeat;
   position: relative;
@@ -81,7 +78,6 @@
 }
 
 .overlay {
-  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -111,9 +107,9 @@
 }
 
 .aligned-text_center {
-  margin-top: 17px;
+  margin-top: 14px;
   align-self: center;
-  max-width: 1280px;
+  margin-bottom: 3px;
 }
 
 .aligned-text_right {
@@ -129,13 +125,15 @@
 }
 
 .cover__description {
-  display: flex;
-  justify-content: end;
-  gap: 83px;
-  padding: 0 50px 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: end;
+  padding: 0 50px 48px 0;
 }
 
 .cover__description-text {
+  grid-column-start: 2;
+  grid-column-end: 3;
   color: #fff;
   font-size: 22px;
   font-weight: 400;
@@ -143,6 +141,8 @@
   text-transform: uppercase;
   word-spacing: 17px;
   align-self: center;
+  justify-self: center;
+  padding-left: 85px;
 }
 
 .bet-button {
@@ -162,7 +162,7 @@
 
 .lots {
   margin: auto;
-  max-width: 1340px;
+  padding: 0 50px 0 50px;
 }
 
 .lots__heading {
@@ -177,6 +177,7 @@
 .lots__card-list {
   list-style: none;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 25px;
   flex-wrap: wrap;
@@ -184,7 +185,7 @@
 
 .lots__card-list-item {
   min-height: 450px;
-  max-width: 430px;
+  width: 430px;
   flex-grow: 1;
 }
 
@@ -251,14 +252,13 @@
   line-height: normal;
   margin-top: 30px;
   margin-left: 40px;
-  min-width: 192px;
   margin-bottom: 178px;
   width: fit-content;
 }
 
 .about {
   margin: auto;
-  max-width: 1340px;
+  padding: 0 50px 0 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -302,14 +302,14 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 103px;
+  margin-bottom: 102px;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 21px;
   color: #000;
   font-size: 20px;
   font-weight: 400;
@@ -321,8 +321,7 @@
   justify-content: space-between;
   align-items: start;
   margin: auto;
-  padding: 180px 0 90px 0px;
-  max-width: 1340px;
+  padding: 180px 50px 90px 50px;
 }
 
 .footer__link_active:last-child {
